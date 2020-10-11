@@ -1,0 +1,10 @@
+zigzag==0.2.2
+Cython==0.29.21
+matplotlib==3.3.0
+tushare==1.2.60
+Ta-Lib==0.4.18
+numpy==1.19.1
+pandas==1.1.0
+python-box==3.2.1
+PyMySQL==0.10.0
+peewee==3.13.3
