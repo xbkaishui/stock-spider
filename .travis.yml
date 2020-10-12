@@ -1,0 +1,14 @@
+language: python
+python:
+    - 3.7
+
+install: 
+    - pip install beautifulsoup4
+    - pip install six
+
+script: nosetests
+
+sudo: false
+
+matrix:
+    fast_finish: true
