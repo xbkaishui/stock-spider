@@ -1,0 +1,200 @@
+AAPL,Apple,Mega,Technology,ConsumerStaples
+AMZN,Amazon,Mega,Consumer Goods,Materials
+MSFT,Microsoft,Mega,Technology,ConsumerStaples
+GOOG,Alphabet Class C,Mega,Technology,ConsumerStaples
+GOOGL,Alphabet Class A,Mega,Technology,ConsumerStaples
+BABA,Alibaba,Mega,Consumer Goods,Materials
+FB,Facebook,Mega,Technology,ConsumerStaples
+TCEHY,Tencent Holdings,Mega,Technology,ConsumerStaples
+BRK.B,Berkshire Hathaway B,Mega,Financial,ConsumerStaples
+BRK.A,Berkshire Hathaway A,Mega,Financial,ConsumerStaples
+TSM,Taiwan Semi,Mega,Technology,ConsumerStaples
+V,Visa,Mega,Financial,ConsumerStaples
+TSLA,Tesla,Mega,Consumer Goods,Materials
+WMT,Walmart,Mega,Consumer Goods,Materials
+JNJ,Johnson & Johnson,Mega,Healthcare,ConsumerStaples
+PG,Procter & Gamble,Mega,Consumer Goods,Materials
+MA,Mastercard,Mega,Financial,ConsumerStaples
+NVDA,Nvidia,Mega,Technology,ConsumerStaples
+NSRGY,Nestle SA Reg,Mega,Consumer Goods,Materials
+NSRGF,Nestlé SA,Mega,Consumer Goods,Materials
+UNH,UnitedHealth,Mega,Healthcare,ConsumerStaples
+JPM,JPMorgan Chase & Co.,Mega,Financial,ConsumerStaples
+HD,Home Depot,Mega,Consumer Goods,Materials
+RHHVF,Roche Holding AG,Mega,Healthcare,ConsumerStaples
+RHHBY,Roche Holding,Mega,Healthcare,ConsumerStaples
+VZ,Verizon,Mega,Technology,ConsumerStaples
+CRM,Salesforce,Mega,Technology,ConsumerStaples
+LVMUY,LVMH Moet Hennessy Louis Vuitton SE,Mega,Consumer Goods,Materials
+ADBE,Adobe,Mega,Technology,ConsumerStaples
+NFLX,Netflix,Mega,Services,ConsumerStaples
+PYPL,Paypal Holdings,Mega,Technology,ConsumerStaples
+INTC,Intel,Mega,Technology,ConsumerStaples
+DIS,Walt Disney,Mega,Services,ConsumerStaples
+BAC,Bank of America,Mega,Financial,ConsumerStaples
+KO,Coca-Cola,Mega,Consumer Goods,Materials
+MPNGF,Meituan Dianping,Mega,Technology,ConsumerStaples
+CMCSA,Comcast,Mega,Services,ConsumerStaples
+NKE,Nike,Mega,Consumer Goods,Materials
+PFE,Pfizer,Mega,Healthcare,ConsumerStaples
+MRK,Merck & Company,Mega,Healthcare,ConsumerStaples
+NVS,Novartis,Mega,Healthcare,ConsumerStaples
+T,AT&T,Mega,Technology,ConsumerStaples
+NAEX,National Art Exchange,Mega,Industrial Goods,ConsumerStaples
+PIAIF,Ping An Insurance Company of China,Large,Financial,ConsumerStaples
+PEP,PepsiCo,Large,Consumer Goods,Materials
+ABT,Abbott Labs,Large,Healthcare,ConsumerStaples
+IDCBY,Industrial & Commercial Bank of China,Large,Financial,ConsumerStaples
+LRLCY,L'Oreal,Large,Consumer Goods,Materials
+IDCBF,Industrial and Commercial Bank of China,Large,Financial,ConsumerStaples
+SAP,SAP AG,Large,Technology,ConsumerStaples
+TM,Toyota Motor,Large,Consumer Goods,Materials
+ORCL,Oracle,Large,Technology,ConsumerStaples
+TMO,Thermo Fisher,Large,Healthcare,ConsumerStaples
+CSCO,Cisco Systems,Large,Technology,ConsumerStaples
+NVO,Novo Nordisk,Large,Healthcare,ConsumerStaples
+MCD,McDonald's,Large,Services,ConsumerStaples
+COST,Costco,Large,Consumer Goods,Materials
+UL,Unilever,Large,Consumer Goods,Materials
+UNLVF,Unilever NV,Large,Consumer Goods,Materials
+RDS.B,Royal Dutch Shell B,Large,Utilities,ConsumerStaples
+UN,Unilever,Large,Consumer Goods,Materials
+CICHF,China Construction Bank,Large,Financial,ConsumerStaples
+ASML,ASML Holding,Large,Industrial Goods,ConsumerStaples
+DHR,Danaher,Large,Healthcare,ConsumerStaples
+PROSY,Prosus NV,Large,Technology,ConsumerStaples
+DSKYF,Daiichi Sankyo Company,Large,Healthcare,ConsumerStaples
+ABBV,AbbVie,Large,Healthcare,ConsumerStaples
+AVGO,Broadcom,Large,Technology,ConsumerStaples
+ZM,Zoom Video Communications,Large,Technology,ConsumerStaples
+PROSF,Prosus,Large,Technology,ConsumerStaples
+UPS,United Parcel,Large,Industrial Goods,ConsumerStaples
+LLY,Eli Lilly & Co,Large,Healthcare,ConsumerStaples
+NEE,NextEra Energy,Large,Utilities,ConsumerStaples
+XOM,Exxon Mobil,Large,Utilities,ConsumerStaples
+MDT,Medtronic,Large,Healthcare,ConsumerStaples
+ACN,Accenture,Large,Technology,ConsumerStaples
+QCOM,Qualcomm,Large,Technology,ConsumerStaples
+TMUS,T Mobile US,Large,Technology,ConsumerStaples
+CVX,Chevron,Large,Utilities,ConsumerStaples
+TXN,Texas Instruments,Large,Technology,ConsumerStaples
+UNP,Union Pacific,Large,Industrial Goods,ConsumerStaples
+BMY,Bristol Myers,Large,Healthcare,ConsumerStaples
+AZN,AstraZeneca,Large,Healthcare,ConsumerStaples
+AMGN,Amgen,Large,Healthcare,ConsumerStaples
+CHLKF,China Mobile,Large,Technology,ConsumerStaples
+BHP,BHP Group,Large,Materials,ConsumerStaples
+SHOP,Shopify,Large,Consumer Goods,Materials
+BHPLF,BHP Group,Large,Materials,ConsumerStaples
+CHL,China Mobile,Large,Technology,ConsumerStaples
+LOW,Lowe's,Large,Consumer Goods,Materials
+CHTR,Charter Communications,Large,Services,ConsumerStaples
+SNYNF,Sanofi,Large,Healthcare,ConsumerStaples
+AAIGF,AIA Group,Large,Financial,ConsumerStaples
+SFTBF,SoftBank Group,Large,Technology,ConsumerStaples
+SFTBY,Softbank,Large,Technology,ConsumerStaples
+AAGIY,AIA Group,Large,Financial,ConsumerStaples
+LIN,Linde,Large,Materials,ConsumerStaples
+SNY,Sanofi-Aventis Sa,Large,Healthcare,ConsumerStaples
+CIHHF,China Merchants Bank Co,Large,Financial,ConsumerStaples
+JD,JD,Large,Consumer Goods,Materials
+PM,Philip Morris,Large,Consumer Goods,Materials
+CIHKY,China Merchants Bank,Large,Financial,ConsumerStaples
+HON,Honeywell International,Large,Industrial Goods,ConsumerStaples
+NTDMF,NTT DoCoMo,Large,Technology,ConsumerStaples
+DCMYY,NTT Docomo,Large,Technology,ConsumerStaples
+BUD,Anheuser-Busch Inbev Sa,Large,Consumer Goods,Materials
+SIEGY,Siemens AG,Large,Industrial Goods,ConsumerStaples
+KYCCF,Keyence,Large,Technology,ConsumerStaples
+RTNTF,Rio Tinto,Large,Materials,ConsumerStaples
+IBM,International Business Machines,Large,Technology,ConsumerStaples
+ACGBF,Agricultural Bank of China,Large,Financial,ConsumerStaples
+BBL,BHP Billiton,Large,Materials,ConsumerStaples
+AMT,American Tower,Large,Financial,ConsumerStaples
+LMT,Lockheed Martin,Large,Technology,ConsumerStaples
+RY,Royal Bank Of Canada,Large,Financial,ConsumerStaples
+WFC,Wells Fargo,Large,Financial,ConsumerStaples
+RDS.A,Royal Dutch Shell A,Large,Utilities,ConsumerStaples
+SBUX,Starbucks,Large,Services,ConsumerStaples
+HDB,Hdfc Bank,Large,Financial,ConsumerStaples
+BACHF,Bank of China,Large,Financial,ConsumerStaples
+PDD,Pinduoduo,Large,Consumer Goods,Materials
+CSLLY,CSL,Large,Healthcare,ConsumerStaples
+AMD,Advanced Micro Devices,Large,Technology,ConsumerStaples
+CMXHF,CSL,Large,Healthcare,ConsumerStaples
+NOW,ServiceNow,Large,Technology,ConsumerStaples
+MMM,3M Company,Large,Industrial Goods,ConsumerStaples
+HESAF,Hermes International,Large,Consumer Goods,Materials
+HESAY,Hermès International,Large,Consumer Goods,Materials
+BA,Boeing,Large,Technology,ConsumerStaples
+BACHY,Bank of China,Large,Financial,ConsumerStaples
+GSK,GlaxoSmithKline,Large,Healthcare,ConsumerStaples
+C,Citigroup,Large,Financial,ConsumerStaples
+BLK,Blackrock,Large,Financial,ConsumerStaples
+TOT,Total SA,Large,Utilities,ConsumerStaples
+FIS,Fidelity National Info,Large,Technology,ConsumerStaples
+SNE,Sony,Large,Consumer Goods,Materials
+RTX,Raytheon Technologies,Large,Industrial Goods,ConsumerStaples
+SNEJF,Sony,Large,Consumer Goods,Materials
+INTU,Intuit,Large,Technology,ConsumerStaples
+BQCNF,Banque Cantonale Vaudoise,Large,Financial,ConsumerStaples
+CMWAY,Commonwealth Bank of Australia,Large,Financial,ConsumerStaples
+ISRG,Intuitive Surgical,Large,Healthcare,ConsumerStaples
+VWAGY,Volkswagen AG,Large,Consumer Goods,Materials
+CAT,Caterpillar,Large,Industrial Goods,ConsumerStaples
+SPGI,S&P Global,Large,Financial,ConsumerStaples
+AXP,American Express,Large,Financial,ConsumerStaples
+MS,Morgan Stanley,Large,Financial,ConsumerStaples
+TD,Toronto Dominion Bank,Large,Financial,ConsumerStaples
+PPRUY,Kering,Large,Consumer Goods,Materials
+SE,Sea,Large,Technology,ConsumerStaples
+SYK,Stryker,Large,Healthcare,ConsumerStaples
+MDLZ,Mondelez International,Large,Consumer Goods,Materials
+SQ,Square,Large,Technology,ConsumerStaples
+DEO,Diageo,Large,Consumer Goods,Materials
+HSBC,HSBC Holdings,Large,Financial,ConsumerStaples
+TGT,Target,Large,Consumer Goods,Materials
+IBDRY,Iberdrola,Large,Utilities,ConsumerStaples
+EL,The Estée Lauder Companies,Large,Consumer Goods,Materials
+BTI,British American Tobacco,Large,Consumer Goods,Materials
+NPSNY,Naspers,Large,Technology,ConsumerStaples
+DGEAF,Diageo,Large,Consumer Goods,Materials
+NAPRF,Naspers,Large,Technology,ConsumerStaples
+PLD,Prologis,Large,Financial,ConsumerStaples
+GILD,Gilead Sciences,Large,Healthcare,ConsumerStaples
+NTTYY,Nippon Telegraph And Telephone,Large,Technology,ConsumerStaples
+ZTS,Zoetis,Large,Healthcare,ConsumerStaples
+NPPXF,Nippon Telegraph and Telephone,Large,Technology,ConsumerStaples
+DTEGY,Deutsche Telekom,Large,Technology,ConsumerStaples
+CNI,Canadian Railway,Large,Industrial Goods,ConsumerStaples
+CVS,CVS Health,Large,Consumer Goods,Materials
+RIO,Rio Tinto,Large,Materials,ConsumerStaples
+CHGCF,Chugai Pharmaceutical Co,Large,Healthcare,ConsumerStaples
+MO,Altria Group,Large,Consumer Goods,Materials
+BEKE,KE Holdings Inc. Sponsored ADR Class A,Large,Technology,ConsumerStaples
+AIQUY,Air Liquide,Large,Materials,ConsumerStaples
+ANTM,Anthem,Large,Healthcare,ConsumerStaples
+DE,Deere,Large,Industrial Goods,ConsumerStaples
+EQIX,Equinix,Large,Financial,ConsumerStaples
+SCHW,Charles Schwab,Large,Financial,ConsumerStaples
+XIACF,Xiaomi,Large,Technology,ConsumerStaples
+GS,Goldman Sachs Group,Large,Financial,ConsumerStaples
+FDX,FedEx,Large,Industrial Goods,ConsumerStaples
+CCI,Crown Castle,Large,Financial,ConsumerStaples
+DOGEF,Orsted,Large,Utilities,ConsumerStaples
+SBGSY,Schneider Electric SE,Large,Industrial Goods,ConsumerStaples
+TJX,TJX Companies,Large,Consumer Goods,Materials
+DNNGY,Orsted,Large,Utilities,ConsumerStaples
+BKNG,Booking Holdings,Large,Services,ConsumerStaples
+BDX,Becton Dickinson,Large,Healthcare,ConsumerStaples
+RBGLY,Reckitt Benckiser Group,Large,Consumer Goods,Materials
+D,Dominion Energy,Large,Utilities,ConsumerStaples
+DUK,Duke Energy,Large,Utilities,ConsumerStaples
+CL,Colgate-Palmolive,Large,Consumer Goods,Materials
+FISV,Fiserv,Large,Technology,ConsumerStaples
+RCRRF,Recruit Holdings Co,Large,Technology,ConsumerStaples
+FRCOF,FAST RETAILING CO,Large,Consumer Goods,Materials
+NTDOY,Nintendo Co,Large,Consumer Goods,Materials
+NTDOF,Nintendo Co,Large,Consumer Goods,Materials
+APD,Air Products and Chemicals,Large,Materials,ConsumerStaples
+LFC,China Life Insurance Company,Large,Financial,ConsumerStaples
