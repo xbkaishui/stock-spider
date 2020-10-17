@@ -9,6 +9,9 @@ Spider US stocks. for quant research purpose, please star it if you like
 https://www.scrapehero.com/scrape-nasdaq-stock-market-data/
 http://skillachie.github.io/finsymbols/
 https://github.com/ranaroussi/yfinance
+https://www.zhihu.com/question/22145919
+https://medium.com/ai%E8%82%A1%E4%BB%94/%E7%94%A8-python-%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E8%82%A1%E5%B8%82%E8%B3%87%E6%96%99%E5%BA%AB-%E7%BE%8E%E8%82%A1%E7%AF%87-e3e896659fd6
+https://zhuanlan.zhihu.com/p/143144116
 
 ### how to reach me
 by twitter (xbkaishui1) or wechat (xbkaishui) 

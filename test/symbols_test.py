@@ -11,7 +11,8 @@ class TestSymbols(TestCase):
                          'http://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=AMEX&render=download')
 
     def test_get_exchange_symbols(self):
-        get_exchange_symbols(Exchange.NASDAQ)
+        symbols = get_exchange_symbols(Exchange.NASDAQ)
+        self.assertIsNotNone(symbols)
 
 if __name__ == '__main__':
     main()

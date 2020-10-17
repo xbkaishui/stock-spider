@@ -5,32 +5,45 @@ import re
 
 import requests
 from hyper.contrib import HTTP20Adapter
+
 from spiders.common.objects import Symbol
 from spiders.util import is_cached
-from hyper import HTTPConnection
 
 headers = {
-    "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-    "Accept-Encoding":"gzip, deflate",
-    "Accept-Language":"en-GB,en;q=0.9,en-US;q=0.8,ml;q=0.7",
-    "Connection":"keep-alive",
-    "Host":"www.nasdaq.com",
-    "Referer":"http://www.nasdaq.com",
-    "Upgrade-Insecure-Requests":"1",
-    "User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-GB,en;q=0.9,en-US;q=0.8,ml;q=0.7",
+    "Connection": "keep-alive",
+    "Host": "www.nasdaq.com",
+    "Referer": "http://www.nasdaq.com",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
 }
+
 
 def get_exchange_url(exchange):
     return ("http://www.nasdaq.com/screening/companies-by-industry.aspx?"
             "exchange={}&render=download".format(exchange.name))
 
 
-def fetch_file(url):
-    print(url)
+def fetch_file(exchange):
+    url = get_exchange_url(exchange)
     session = requests.session()
     session.mount(url, HTTP20Adapter())
     req = session.request("GET", "https://www.nasdaq.com/api/v1/screener?page=1&pageSize=200",
-                           headers=headers, verify=False)
+                          headers=headers, verify=False)
+    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/", exchange.name)
+    json_obj = req.json()
+    rows = json_obj['data']
+    out = open(file_path, 'a', newline='\n')
+    csv_writer = csv.writer(out, delimiter=',')
+    for row in rows:
+        ticker = row['ticker']
+        company = row['company']
+        marketCapGroup = row['marketCapGroup']
+        sector = row['sectorName']
+        gicsSector = row['gicsSector']
+        csv_writer.writerow([ticker, company, marketCapGroup, sector, gicsSector])
     return req.text
 
 
@@ -49,8 +62,8 @@ def read_symbol_list(symbol_data):
         symbol_data = Symbol()
         symbol_data.symbol = row[0]
         symbol_data.company = row[1]
-        symbol_data.sector = row[6]
-        symbol_data.industry = row[7]
+        symbol_data.sector = row[2]
+        symbol_data.industry = row[3]
         symbol_list.append(symbol_data)
     return symbol_list
 
@@ -60,14 +73,11 @@ def get_exchange_symbols(exchange):
      read symbols from exchange
 
     """
-    url = get_exchange_url(exchange)
     file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/", exchange.name)
     print(file_path)
-    if is_cached(file_path):
+    if not is_cached(file_path):
+        fetch_file(exchange)
+    else:
         with open(file_path, "r") as cached_file:
             symbol_data = cached_file.read()
-    else:
-        symbol_data = fetch_file(url)
-        save_file(file_path, symbol_data)
-
     return read_symbol_list(symbol_data)
