@@ -30,21 +30,22 @@ def fetch_file(exchange):
     url = get_exchange_url(exchange)
     session = requests.session()
     session.mount(url, HTTP20Adapter())
-    req = session.request("GET", "https://www.nasdaq.com/api/v1/screener?page=1&pageSize=200",
-                          headers=headers, verify=False)
     file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/", exchange.name)
-    json_obj = req.json()
-    rows = json_obj['data']
     out = open(file_path, 'a', newline='\n')
     csv_writer = csv.writer(out, delimiter=',')
-    for row in rows:
-        ticker = row['ticker']
-        company = row['company']
-        marketCapGroup = row['marketCapGroup']
-        sector = row['sectorName']
-        gicsSector = row['gicsSector']
-        csv_writer.writerow([ticker, company, marketCapGroup, sector, gicsSector])
-    return req.text
+    for i in range(50):
+        url = "https://www.nasdaq.com/api/v1/screener?page="+str(i+1)+"&pageSize=200"
+        req = session.request("GET", url,
+                              headers=headers, verify=False)
+        json_obj = req.json()
+        rows = json_obj['data']
+        for row in rows:
+            ticker = row['ticker']
+            company = row['company']
+            marketCapGroup = row['marketCapGroup']
+            sector = row['sectorName']
+            gicsSector = row['gicsSector']
+            csv_writer.writerow([ticker, company, marketCapGroup, sector, gicsSector])
 
 
 def save_file(file_path, symbol_data):
@@ -77,7 +78,7 @@ def get_exchange_symbols(exchange):
     print(file_path)
     if not is_cached(file_path):
         fetch_file(exchange)
-    else:
-        with open(file_path, "r") as cached_file:
-            symbol_data = cached_file.read()
+    symbol_data = None
+    with open(file_path, "r") as cached_file:
+        symbol_data = cached_file.read()
     return read_symbol_list(symbol_data)
