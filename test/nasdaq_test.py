@@ -7,7 +7,7 @@ class TestNasdaqSpider(TestCase):
     def test_get_stock_data(self):
         spider = NasdaqSpider()
         symbol = 'AMZN'
-        data = spider.get_stock_data(symbol, '2020-08-01', '2020-10-10')
+        data = spider.get_stock_data(symbol, '2019-08-01', '2020-10-10')
         self.assertIsNotNone(data)
 
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from spiders.spider import Spider
 import requests
-from hyper.contrib import HTTP20Adapter
+import json
 
 class NasdaqSpider(Spider):
 
@@ -26,11 +26,8 @@ class NasdaqSpider(Spider):
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
         }
         url = self.base_url.format(symbol, start, end)
-        # url = 'https://api.nasdaq.com/api/quote/AMZN/chart?assetclass=stocks&fromdate=2019-10-20&todate=2020-10-20'
-        # session = requests.session()
-        # session.mount("https://api.nasdaq.com", HTTP20Adapter())
-        # resp = session.request("GET", url, headers=headers, verify=False)
         resp = requests.get(url, headers = headers, verify=False)
         stock_datas = resp.json()['data']['chart']
         if stock_datas and len(stock_datas) > 0:
-            print(stock_datas)
+            print(json.dumps(stock_datas))
+        return stock_datas
