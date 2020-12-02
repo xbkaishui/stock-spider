@@ -2,7 +2,6 @@ from unittest import TestCase, main
 
 from spiders.nasdaq import NasdaqSpider
 
-
 class TestNasdaqSpider(TestCase):
     def test_get_stock_data(self):
         spider = NasdaqSpider()

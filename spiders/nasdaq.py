@@ -2,6 +2,7 @@
 from spiders.spider import Spider
 import requests
 import json
+from spiders.common.objects import Kline
 
 class NasdaqSpider(Spider):
 
@@ -28,6 +29,19 @@ class NasdaqSpider(Spider):
         url = self.base_url.format(symbol, start, end)
         resp = requests.get(url, headers = headers, verify=False)
         stock_datas = resp.json()['data']['chart']
+        klines = []
         if stock_datas and len(stock_datas) > 0:
             print(json.dumps(stock_datas))
-        return stock_datas
+            for stock_data in stock_datas :
+                stock_info = stock_data['z']
+                kline = Kline()
+                kline.symbol = symbol
+                kline.high =  float(stock_info['high'])
+                kline.low = float(stock_info['low'])
+                kline.open = float(stock_info['open'])
+                kline.close = float(stock_info['close'])
+                kline.volume = float(stock_info['volume'].replace(',',''))
+                kline.value = float(stock_info['value'])
+                kline.dateTime = stock_info['dateTime']
+                klines.append(kline)
+        return klines
