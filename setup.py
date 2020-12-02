@@ -3,10 +3,10 @@ import setuptools
 
 setup(
     name='stock-spider',
-    version='1.3.0',
-    packages=['stock-spider'],
-    package_dir={'spider': 'doc'},
-    package_data={'spider': ['exchanges/*.csv']},
+    version='1.0.0',
+    packages=['spiders'],
+    package_dir={'spiders': 'doc'},
+    package_data={'spiders': ['exchanges/*.csv']},
     include_package_data=True,
     author='xbkaishui',
     author_email='xbkaishui@126.com',
@@ -17,7 +17,7 @@ setup(
     keywords='Spider US Stock'.split(),
     license='Apache License 2.0',
     install_requires=[
-        "beautifulsoup4 >= 4.2.1"
+        "requests >= 2.20.0"
     ],
     classifiers=[
         'Development Status :: 4 - Beta',

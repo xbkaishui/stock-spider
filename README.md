@@ -1,8 +1,16 @@
 # stock-spider
-Spider US stocks. for quant research purpose, please star it if you like
+Spider US stocks. for quant research purpose, star if you like
+
+## usage
+python install setup.py
+``` python
+from spiders.nasdaq import NasdaqSpider  
+spider = NasdaqSpider()
+spider.store_kline_data("/tmp/amzn.csv", 'AMZN', '2019-08-01', '2020-10-10') 
+
+```
 
 ## please submit a issue if you have any questions
-
 
 
 ## reference
