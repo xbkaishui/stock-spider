@@ -3,7 +3,7 @@ import setuptools
 
 setup(
     name='stock-spider',
-    version='1.0.0',
+    version='1.0.1',
     packages=['spiders'],
     author='xbkaishui',
     author_email='xbkaishui@126.com',
