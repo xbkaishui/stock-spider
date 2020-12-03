@@ -34,11 +34,15 @@ def fetch_file(exchange):
     out = open(file_path, 'a', newline='\n')
     csv_writer = csv.writer(out, delimiter=',')
     for i in range(50):
+        print("start crawler page " + str(i+1))
         url = "https://www.nasdaq.com/api/v1/screener?page="+str(i+1)+"&pageSize=200"
         req = session.request("GET", url,
                               headers=headers, verify=False)
         json_obj = req.json()
         rows = json_obj['data']
+        if rows is None:
+            continue
+
         for row in rows:
             ticker = row['ticker']
             company = row['company']

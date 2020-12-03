@@ -2,13 +2,25 @@
 Spider US stocks. for quant research purpose, star if you like
 
 ## usage
-python install setup.py
+### pip install stock-spider
+
+#### batch save all stocks
+
+``` python
+from spiders.engine import CrawlerEngine
+engine = CrawlerEngine()
+engine.sync_all_nasdaq("/tmp/stocks", '2019-08-01', '2020-10-10')
+
+```
+
+#### get single stock 
 ``` python
 from spiders.nasdaq import NasdaqSpider  
 spider = NasdaqSpider()
 spider.store_kline_data("/tmp/amzn.csv", 'AMZN', '2019-08-01', '2020-10-10') 
 
 ```
+
 
 ## please submit a issue if you have any questions
 
