@@ -32,8 +32,12 @@ class NasdaqSpider(Spider):
         }
         url = self.base_url.format(symbol, start, end)
         resp = requests.get(url, headers=headers, verify=False)
-        stock_datas = resp.json()['data']['chart']
         klines = []
+        if resp.json()['data'] is None or  resp.json()['data']['chart'] is None:
+            print(symbol+" is none!")
+            return klines
+
+        stock_datas = resp.json()['data']['chart']
         if stock_datas and len(stock_datas) > 0:
             print(json.dumps(stock_datas))
             for stock_data in stock_datas:
