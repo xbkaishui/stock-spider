@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import datetime
-import sys
 
 def is_cached(file_path):
     '''

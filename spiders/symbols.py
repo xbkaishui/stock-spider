@@ -31,7 +31,7 @@ def fetch_file(exchange):
     session = requests.session()
     session.mount(url, HTTP20Adapter())
     file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/", exchange.name)
-    out = open(file_path, 'a', newline='\n')
+    out = open(file_path, 'w', newline='\n')
     csv_writer = csv.writer(out, delimiter=',')
     for i in range(50):
         print("start crawler page " + str(i+1))

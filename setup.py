@@ -15,7 +15,9 @@ setup(
     keywords='Spider US Stock'.split(),
     license='Apache License 2.0',
     install_requires=[
-        "requests >= 2.20.0"
+        "requests >= 2.20.0",
+        "hyper >= 0.7.0",
+        "dataclasses >= 0.6"
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
