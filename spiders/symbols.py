@@ -39,11 +39,14 @@ def fetch_file(exchange):
         req = session.request("GET", url,
                               headers=headers, verify=False)
         json_obj = req.json()
+        print(json_obj)
         rows = json_obj['data']
         if rows is None:
             continue
 
         for row in rows:
+            if row is None or 'ticker' not in row:
+                continue
             ticker = row['ticker']
             company = row['company']
             marketCapGroup = row['marketCapGroup']
