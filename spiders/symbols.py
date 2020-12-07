@@ -66,7 +66,9 @@ def read_symbol_list(symbol_data):
     # symbol,company,sector,industry,headquaters
     symbol_data = list(csv.reader(symbol_data, delimiter=','))
     # We need to cut off the the last row because it is a null string
-    for row in symbol_data[1:-1]:
+    for row in symbol_data:
+        if len(row) < 2:
+            continue
         symbol_data = Symbol()
         symbol_data.symbol = row[0]
         symbol_data.company = row[1]

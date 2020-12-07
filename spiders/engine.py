@@ -43,7 +43,7 @@ class CrawlerEngine(object):
             if cache and is_cached(stock_path):
                 print("file is cached ignore " + stock_path)
                 return
-            print("try to sync symbol " + code )
+            print("try to sync symbol " + code)
             self.spider.store_kline_data(stock_path, code, start, end)
         except :
             print("fetch symbol error " + symbol.symbol + " ignore")

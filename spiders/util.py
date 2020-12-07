@@ -13,7 +13,7 @@ def is_cached(file_path):
     current_time = datetime.datetime.now()
     file_age = (current_time - file_time).total_seconds()
 
-    if file_age > 86400:
+    if file_age > 86400*10:
         return False
     else:
         return True
