@@ -13,7 +13,7 @@ class CrawlerEngine(object):
         self.spider = NasdaqSpider()
 
     """
-     sync all stock to local path
+     sync all stock to local path, support multi thread
     """
     def sync_all_nasdaq(self, file_path, start, end, cache = True):
         symbols = get_exchange_symbols(Exchange.NASDAQ)
