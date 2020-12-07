@@ -26,7 +26,7 @@ class CrawlerEngine(object):
                 print("try to sync symbol " + code )
                 spider.store_kline_data(stock_path, code, start, end)
             except :
-                print("fetch symbol error " + symbol + " ignore")
+                print("fetch symbol error " + symbol.symbol + " ignore")
 
     def create_dir_if_needed(self, file_path):
         if not os.path.exists(file_path):

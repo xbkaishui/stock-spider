@@ -9,7 +9,7 @@ Spider US stocks. for quant research purpose, star if you like
 ``` python
 from spiders.engine import CrawlerEngine
 engine = CrawlerEngine()
-engine.sync_all_nasdaq("/tmp/stocks", '2019-08-01', '2020-10-10')
+engine.sync_all_nasdaq("/tmp/stocks", '2010-01-01', '2020-12-04')
 
 ```
 
